@@ -40,6 +40,8 @@
 .card_nav {
   display: inline-table;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
 }
 .card__link {
   display: inline-block;
@@ -54,8 +56,8 @@
   background: rgb(244, 244, 244);
   transition: background-color 150ms ease-in-out;
   &:not(:last-child) {
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
   }
   &:hover {
     background-color: #e5e5e5;
@@ -86,6 +88,25 @@
   height: 226px;
   right: 10px;
   bottom: 15px;
+}
+.d-g-1 {
+  width: 257px;
+  height: 257px;
+  right: 30px;
+  bottom: 0px;
+  top: 0px;
+}
+.g-g-1 {
+  width: 248px;
+  height: 248px;
+  right: 10px;
+  bottom: 10px;
+}
+.k-1 {
+  width: 258px;
+  height: 258px;
+  right: 0;
+  bottom: 6px;
 }
 .card__img {
   width: 100%;
