@@ -251,6 +251,9 @@
     display: flex;
     flex-direction: column-reverse;
   }
+  &.mw-338 {
+    max-width: 338px;
+  }
 }
 .card_nav {
   display: inline-table;
