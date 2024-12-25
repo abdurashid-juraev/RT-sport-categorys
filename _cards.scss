@@ -401,12 +401,22 @@
 .z-1-3 {
   right: -4px;
   bottom: 12px;
+  @media (max-width: 1200px) {
+    position: relative;
+    z-index: 1;
+  }
 }
 .z-1-4 {
   right: -7px;
   bottom: 7px;
   width: 261px;
   height: 261px;
+  @media (max-width: 1200px) {
+    position: relative;
+    z-index: 1;
+    margin-right: auto;
+    transform: translate(-17%, -20px);
+  }
 }
 .d-g-2 {
   width: 276px;
@@ -455,6 +465,12 @@
   height: 269px;
   right: 25px;
   bottom: 8px;
+}
+.z-1-2 {
+  @media (max-width: 1200px) {
+    position: relative;
+    z-index: 1;
+  }
 }
 .card__img {
   width: 100%;
