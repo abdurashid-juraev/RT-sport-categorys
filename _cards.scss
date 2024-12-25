@@ -4,6 +4,9 @@
   column-gap: 15px;
   row-gap: 46px;
 }
+.row-30 {
+  row-gap: 30px;
+}
 .card {
   flex: 0 1 570px;
   padding: 35px 28px;
@@ -62,6 +65,9 @@
   &:hover {
     background-color: #e5e5e5;
   }
+  &.active {
+    background-color: #e5e5e5;
+  }
 }
 .card__img-wrap {
   width: 249px;
@@ -93,20 +99,83 @@
   width: 257px;
   height: 257px;
   right: 30px;
-  bottom: 0px;
-  top: 0px;
+  top: 10px;
 }
 .g-g-1 {
   width: 248px;
   height: 248px;
-  right: 10px;
-  bottom: 10px;
+  right: 20px;
+  bottom: 22px;
+}
+.a-1 {
+  width: 274px;
+  height: 274px;
+  right: 2px;
+  bottom: 7px;
 }
 .k-1 {
   width: 258px;
   height: 258px;
   right: 0;
-  bottom: 6px;
+  bottom: 10px;
+}
+.z-1-3 {
+  right: -4px;
+  bottom: 12px;
+}
+.z-1-4 {
+  right: -7px;
+  bottom: 7px;
+  width: 261px;
+  height: 261px;
+}
+.d-g-2 {
+  width: 276px;
+  height: 276px;
+  right: 10px;
+  bottom: -10px;
+}
+.d-g-3 {
+  width: 276px;
+  height: 276px;
+  right: 10px;
+  bottom: -10px;
+}
+.d-g-4 {
+  width: 276px;
+  height: 276px;
+  right: 10px;
+  bottom: -10px;
+}
+.d-g-5 {
+  width: 310px;
+  height: 310px;
+  right: 10px;
+  top: -10px;
+}
+.g-g-2 {
+  width: 259px;
+  height: 259px;
+  right: 25px;
+  bottom: 25px;
+}
+.g-g-3 {
+  width: 259px;
+  height: 259px;
+  right: 0px;
+  bottom: 15px;
+}
+.k-2 {
+  width: 269px;
+  height: 269px;
+  right: 0;
+  bottom: 10px;
+}
+.k-3 {
+  width: 269px;
+  height: 269px;
+  right: 25px;
+  bottom: 8px;
 }
 .card__img {
   width: 100%;
