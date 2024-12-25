@@ -1,6 +1,9 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  align-items: middle;
+  justify-content: center;
+
   column-gap: 15px;
   row-gap: 46px;
 }
@@ -8,7 +11,8 @@
   row-gap: 30px;
 }
 .card {
-  flex: 0 1 570px;
+  max-width: 570px;
+  width: 100%;
   padding: 35px 28px;
   position: relative;
   height: 254px;
@@ -27,6 +31,10 @@
       filter: drop-shadow(6px 6px 14px rgba(0, 0, 0, 0.2));
     }
   }
+  @media (max-width: 1200px) {
+    max-width: 185px;
+    height: auto;
+  }
 }
 .card__title {
   color: $title-color;
@@ -39,10 +47,15 @@
 }
 .card__content {
   max-width: 310px;
+  @media (max-width: 1200px) {
+    max-width: auto;
+    flex-direction: column-reverse;
+  }
 }
 .card_nav {
   display: inline-table;
   flex-wrap: wrap;
+  align-items: center;
   position: relative;
   z-index: 1;
 }
@@ -76,6 +89,12 @@
   right: -12px;
   bottom: 0;
   transition: transform 250ms ease-in-out;
+  @media (max-width: 1200px) {
+    width: 187px;
+    height: 151px;
+    right: 0;
+    bottom: 0;
+  }
 }
 .d-1 {
   width: 280px;
