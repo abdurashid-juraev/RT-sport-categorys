@@ -40,5 +40,19 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }
     });
+    const initialCardState = {
+      links: [...cardLinks].map((link) => link.className),
+      contents: [...tabContents].map((content) => content.className),
+    };
+
+    card.addEventListener("mouseleave", () => {
+      cardLinks.forEach((link, index) => {
+        link.className = initialCardState.links[index];
+      });
+
+      tabContents.forEach((content, index) => {
+        content.className = initialCardState.contents[index];
+      });
+    });
   });
 });
