@@ -268,6 +268,8 @@
     max-width: auto;
     display: flex;
     flex-direction: column-reverse;
+    position: relative;
+    z-index: 1;
   }
   &.mw-338 {
     max-width: 338px;
@@ -339,15 +341,11 @@
     width: 100%;
     height: none;
     margin-top: -20px;
-    position: relative;
-    z-index: 1;
   }
   @media (max-width: 800px) {
     width: 181px;
     height: 181px;
     margin-top: -30px;
-    position: relative;
-    z-index: 1;
   }
 }
 .r-1 {
@@ -359,15 +357,11 @@
     width: 100%;
     height: none;
     margin-top: auto;
-    position: relative;
-    z-index: 1;
   }
   @media (max-width: 800px) {
     width: 174px;
     height: 174px;
     margin-top: -20px;
-    position: relative;
-    z-index: 1;
   }
 }
 .t-1 {
@@ -379,17 +373,13 @@
     width: 100%;
     height: 250px;
     margin-top: auto;
-    position: relative;
     right: 0;
-    z-index: 1;
   }
   @media (max-width: 800px) {
     width: 168px;
     height: 168px;
     margin-top: -10px;
     margin-left: auto;
-    position: relative;
-    z-index: 1;
   }
 }
 .d-g-1 {
@@ -400,17 +390,12 @@
   @media (max-width: 1200px) {
     width: 100%;
     height: 250px;
-    position: relative;
     right: 0;
-    z-index: 1;
   }
   @media (max-width: 800px) {
-    width: 187px;
-    height: 183px;
-    margin-top: -20px;
+    height: 190px;
+    margin-top: -30px;
     margin-left: 18px;
-    position: relative;
-    z-index: 1;
   }
 }
 .g-g-1 {
@@ -421,9 +406,6 @@
   @media (max-width: 1200px) {
     width: 100%;
     height: 250px;
-    position: relative;
-    right: 0;
-    z-index: 1;
     right: 0;
     transform: translateX(7%);
   }
@@ -432,29 +414,23 @@
     height: 157px;
     margin-top: 0px;
     margin-left: 18px;
-    position: relative;
-    z-index: 1;
-    transform: translateX(-10%);
+    margin-left: 5px;
   }
 }
 .a-1 {
   width: 274px;
   height: 274px;
   right: 10px;
-  bottom: 20px;
+  bottom: 10px;
   @media (max-width: 1200px) {
     width: 100%;
     height: 250px;
-    position: relative;
     right: 0;
-    z-index: 1;
   }
   @media (max-width: 800px) {
     height: 137px;
     margin-top: 0px;
     margin-left: 1px;
-    position: relative;
-    z-index: 1;
     margin-bottom: 20px;
   }
   @media (max-width: 410px) {
@@ -469,39 +445,24 @@
   @media (max-width: 1200px) {
     width: 100%;
     height: 250px;
-    position: relative;
     right: 0;
-    z-index: 1;
   }
   @media (max-width: 800px) {
-    // width: 153px;
     height: 160px;
     margin-top: 0px;
     margin-left: 1px;
-    position: relative;
-    z-index: 1;
   }
 }
 .z-1-3 {
   right: -4px;
   bottom: 12px;
-  @media (max-width: 1200px) {
-    position: relative;
-    z-index: 1;
-  }
 }
 .z-1-4 {
   right: -7px;
   bottom: 7px;
   width: 261px;
   height: 261px;
-  @media (max-width: 1200px) {
-    position: relative;
-    z-index: 1;
-  }
   @media (max-width: 800px) {
-    position: relative;
-    z-index: 1;
     margin-right: auto;
     transform: translate(-17%, -20px);
   }
@@ -517,18 +478,48 @@
   height: 276px;
   right: 10px;
   bottom: -10px;
+  @media (max-width: 1200px) {
+    width: 100%;
+    height: 250px;
+    right: 0;
+  }
+  @media (max-width: 800px) {
+    height: 160px;
+    margin-top: 0px;
+    margin-left: 1px;
+  }
 }
 .d-g-4 {
   width: 276px;
   height: 276px;
   right: 10px;
   bottom: -10px;
+  @media (max-width: 1200px) {
+    width: 100%;
+    height: 250px;
+    right: 0;
+  }
+  @media (max-width: 800px) {
+    height: 180px;
+    margin-top: -20px;
+    margin-left: 1px;
+  }
 }
 .d-g-5 {
   width: 310px;
   height: 310px;
   right: 10px;
   top: -10px;
+  @media (max-width: 1200px) {
+    width: 100%;
+    height: 250px;
+    right: 0;
+  }
+  @media (max-width: 800px) {
+    height: 180px;
+    margin-top: -20px;
+    margin-left: 1px;
+  }
 }
 .g-g-2 {
   width: 259px;
@@ -536,16 +527,13 @@
   right: 25px;
   bottom: 25px;
   @media (max-width: 1200px) {
-    position: relative;
-    z-index: 1;
     width: 100%;
     height: 250px;
     right: 0;
-    transform: translateX(7%);
   }
   @media (max-width: 800px) {
     height: 160px;
-    transform: translateX(7%);
+    margin-left: 5px;
   }
 }
 .g-g-3 {
@@ -554,16 +542,13 @@
   right: 0px;
   bottom: 15px;
   @media (max-width: 1200px) {
-    position: relative;
-    z-index: 1;
     width: 100%;
     height: 250px;
     right: 0;
-    transform: translateX(7%);
   }
   @media (max-width: 800px) {
     height: 160px;
-    transform: translateX(7%);
+    right: 20px;
   }
 }
 .k-2 {
@@ -585,15 +570,7 @@
   @media (max-width: 800px) {
     width: 100%;
     height: 160px;
-    position: relative;
-    z-index: 1;
     right: 0;
-  }
-}
-.z-1-2 {
-  @media (max-width: 1200px) {
-    position: relative;
-    z-index: 1;
   }
 }
 .card__img {
@@ -602,4 +579,12 @@
   object-fit: fill;
   object-position: right bottom;
   transition: filter 250ms ease-in-out;
+}
+
+.item {
+  display: none; /* Barcha tasvirlarni yashirish */
+}
+
+.item.active {
+  display: block; /* Faqat aktiv tasvirni ko‘rsatish */
 }

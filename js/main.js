@@ -1,19 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const cardLinks = document.querySelectorAll(".card__link");
+  const cards = document.querySelectorAll(".card");
 
-  cardLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
-      event.stopPropagation();
+  cards.forEach((card) => {
+    const cardLinks = card.querySelectorAll(".card__link");
+    const tabContents = card.querySelectorAll(".item");
 
-      const currentCard = link.closest(".card");
-      const cardLinksInCard = currentCard.querySelectorAll(".card__link");
+    cardLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
 
-      cardLinksInCard.forEach((cardLink) => {
-        cardLink.classList.remove("active");
+        cardLinks.forEach((cardLink) => cardLink.classList.remove("active"));
+        link.classList.add("active");
+
+        const targetTab = link.dataset.tab;
+        tabContents.forEach((content) => {
+          content.classList.remove("active");
+          if (content.dataset.tabContent === targetTab) {
+            content.classList.add("active");
+          }
+        });
       });
-
-      link.classList.add("active");
     });
   });
 });
