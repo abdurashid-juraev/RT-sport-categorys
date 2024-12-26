@@ -32,13 +32,13 @@
   border-radius: 20px;
   background: rgb(255, 255, 255);
   cursor: pointer;
-  transition: transform 250ms ease-in-out, filter 250ms ease-in-out;
   &:hover {
+    transition: transform 250ms ease-in-out, filter 250ms ease-in-out;
     .card__img-wrap {
-      transform: scale(1.03);
+      transform: scale(1.02);
     }
     .card__img {
-      filter: drop-shadow(6px 6px 14px rgba(0, 0, 0, 0.2));
+      filter: drop-shadow(6px 6px 20px rgba(0, 0, 0, 0.1));
     }
   }
   @media (max-width: 1200px) {
@@ -506,10 +506,11 @@
   }
 }
 .d-g-5 {
-  width: 310px;
-  height: 310px;
-  right: 10px;
-  top: -10px;
+  width: 275px;
+  height: 275px;
+  right: 31px;
+  top: 7px;
+  transform: rotate(-8deg);
   @media (max-width: 1200px) {
     width: 100%;
     height: 250px;
